@@ -1,0 +1,25 @@
+const valores = [ 
+    {nome: "SP", valor: 67836.43},
+    {nome: "RJ", valor: 36678.66},
+    {nome: "MG", valor: 29229.88},
+    {nome: "ES", valor: 27165.48},
+    {nome: "OUTROS", valor: 19849.53}
+]
+
+function total(){
+    let total = 0;
+    for(let i = 0; i < valores.length; i++){
+        total = total + valores[i].valor;
+}
+    return total;
+}
+
+todo = total();
+let porcentagem = [
+{nome: "SP", percentual: (100*valores[0].valor)/todo},
+{nome: "RJ",percentual: (100*valores[1].valor)/todo},
+{nome: "MG",percentual: (100*valores[2].valor)/todo},
+{nome: "ES",percentual: (100*valores[3].valor)/todo},
+{nome: "OUTROS", percentual: (100*valores[4].valor)/todo}];
+
+console.log(porcentagem)
